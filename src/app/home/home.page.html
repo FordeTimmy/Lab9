@@ -1,8 +1,5 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,6 +11,7 @@
   </ion-header>
 
   <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
+    <ion-label>My status is :{{myStatus}}</ion-label><br>
+    <ion-button [routerLink]="['/status']">Update Status</ion-button>
   </div>
 </ion-content>
